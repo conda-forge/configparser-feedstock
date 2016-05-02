@@ -5,7 +5,7 @@ Home: http://docs.python.org/3/library/configparser.html
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: This library brings the updated configparser from Python 3.5 to Python 2.6-3.5
 
