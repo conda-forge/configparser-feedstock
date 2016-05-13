@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/configparser-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/configparser-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/configparser-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/configparser-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/configparser-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/configparser-feedstock/branch/master)
