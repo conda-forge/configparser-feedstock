@@ -1,4 +1,4 @@
-{% set version = "3.5.0b2" %}
+{% set version = "3.5.0" %}
 
 package:
     name: configparser
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: configparser-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/c/configparser/configparser-{{ version }}.tar.gz
-    md5: ad2a71db8bd9a017ed4735eac7acfa07
+    url: https://pypi.io/packages/source/c/configparser/configparser-{{ version }}.tar.gz
+    md5: cfdd915a5b7a6c09917a64a573140538
 
 build:
     number: 0
