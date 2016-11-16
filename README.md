@@ -33,7 +33,6 @@ conda search configparser --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
