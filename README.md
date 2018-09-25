@@ -14,9 +14,8 @@ Summary: This library brings the updated configparser from Python 3.5 to Python 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/configparser-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/configparser-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/configparser-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/configparser-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/configparser-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/configparser-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/configparser-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/configparser-feedstock)
 
 Current release info
 ====================
