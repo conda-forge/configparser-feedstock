@@ -1,38 +1,38 @@
 {% set version = "3.5.0" %}
 
 package:
-    name: configparser
-    version: {{ version }}
+  name: configparser
+  version: {{ version }}
 
 source:
-    fn: configparser-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/c/configparser/configparser-{{ version }}.tar.gz
-    md5: cfdd915a5b7a6c09917a64a573140538
+  url: https://pypi.io/packages/source/c/configparser/configparser-{{ version }}.tar.gz
+  sha256: 5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a
 
 build:
-    number: 0
-    skip: False
-    script: python setup.py install --single-version-externally-managed --record record.txt
-
+    number: 1000
+    noarch: python
+    script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
+  host:
+    - pip
+    - python <3.6
+  run:
+    - python <3.6
 
 test:
-    imports:
-        - backports
-        - backports.configparser
-        - configparser
+  imports:
+    - backports
+    - backports.configparser
+    - configparser
 
 about:
-    home: http://docs.python.org/3/library/configparser.html
-    license: MIT
-    summary: This library brings the updated configparser from Python 3.5 to Python 2.6-3.5
+  home: http://docs.python.org/3/library/configparser.html
+  license: MIT
+  summary: This library brings the updated configparser from Python 3.5 to Python 2.6-3.5
 
 extra:
-    recipe-maintainers:
-        - jakirkham
-        - ocefpaf
+  recipe-maintainers:
+    - jakirkham
+    - ocefpaf
+    - bgruening
