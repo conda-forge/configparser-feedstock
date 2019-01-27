@@ -1,4 +1,4 @@
-{% set version = "3.5.0" %}
+{% set version = "3.7.1" %}
 
 package:
   name: configparser
@@ -6,11 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/configparser/configparser-{{ version }}.tar.gz
-  sha256: 5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a
+  sha256: 5bd5fa2a491dc3cfe920a3f2a107510d65eceae10e9c6e547b90261a4710df32
 
 build:
-  number: 1001
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 0
+  skip: True  # [win and py>34]
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
