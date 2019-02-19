@@ -9,15 +9,17 @@ source:
   sha256: 5bd5fa2a491dc3cfe920a3f2a107510d65eceae10e9c6e547b90261a4710df32
 
 build:
-  number: 0
-  skip: True  # [win and py>34]
+  number: 1
+  skip: True  # [win]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
+    - backports
     - pip
     - python
   run:
+    - backports
     - python
 
 test:
