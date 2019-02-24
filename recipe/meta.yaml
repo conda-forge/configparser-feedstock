@@ -9,7 +9,7 @@ source:
   sha256: 27594cf4fc279f321974061ac69164aaebd2749af962ac8686b20503ac0bcf2d
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -30,6 +30,7 @@ test:
 about:
   home: http://docs.python.org/3/library/configparser.html
   license: MIT
+  license_file: LICENSE
   summary: This library brings the updated configparser from Python 3.5 to Python 2.6-3.5
 
 extra:
