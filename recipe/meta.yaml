@@ -17,6 +17,7 @@ requirements:
     - backports
     - pip
     - python
+    - setuptools_scm >=1.15.0
   run:
     - backports
     - python
