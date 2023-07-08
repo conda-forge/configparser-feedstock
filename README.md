@@ -1,11 +1,11 @@
-About configparser
-==================
+About configparser-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/configparser-feedstock/blob/main/LICENSE.txt)
 
 Home: http://docs.python.org/3/library/configparser.html
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/configparser-feedstock/blob/main/LICENSE.txt)
 
 Summary: Updated configparser from Python 3.8 for Python 2.6+.
 
