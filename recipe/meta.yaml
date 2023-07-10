@@ -1,36 +1,35 @@
+{% set name = "configparser" %}
 {% set version = "6.0.0" %}
 
 package:
-  name: configparser
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/configparser/configparser-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/configparser-{{ version }}.tar.gz
   sha256: ec914ab1e56c672de1f5c3483964e68f71b34e457904b7b76e06b922aec067a8
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - setuptools >=56
+    - setuptools-scm >=3.4.1
     - pip
-    - setuptools_scm >=3.4.1
-    - toml
   run:
-    - python >=3.6
+    - python >=3.8
 
 test:
-  requires:
-    - pip
   imports:
-    - backports
-    - backports.configparser
     - configparser
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: http://docs.python.org/3/library/configparser.html
