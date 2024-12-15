@@ -5,26 +5,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/configparser/configparser-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/configparser/configparser-{{ version }}.tar.gz
   sha256: eb82646c892dbdf773dae19c633044d163c3129971ae09b49410a303b8e0a5f7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools_scm >=3.4.1
     - toml
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - backports
     - backports.configparser
