@@ -1,12 +1,12 @@
-{% set version = "7.2.0" %}
+{% set version = "7.3.0" %}
 
 package:
   name: configparser
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/configparser/configparser-{{ version }}.tar.gz
-  sha256: b629cc8ae916e3afbd36d1b3d093f34193d851e11998920fdcfc4552218b7b70
+  url: https://files.pythonhosted.org/packages/source/c/configparser/configparser-{{ version }}.tar.gz
+  sha256: 2e148379c75806e4ab879bea6245774c65b6206236f4b3d74d8231cb1c46c741
 
 build:
   number: 0
